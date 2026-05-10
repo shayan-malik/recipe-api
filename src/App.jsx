@@ -5,7 +5,6 @@ import img from "./images/chef.png"
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [color, setColor] = useState(true);
 
   const myRecipe = async () => {
     try {

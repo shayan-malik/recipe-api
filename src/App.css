@@ -17,12 +17,19 @@
 
 .card{
   padding: 20px;
-  width: 250px;
-  height: 450px;
+  width: 255px;
+  height: 450;
+  cursor: pointer;
   background-color: white;
   box-shadow: 7px 7px 5px gray;
   border-radius: 20px;
   position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+  transform: translateY(-12px);
+  transition: all 0.3s ease-in-out;
 }
 
 .recImage img{
@@ -32,16 +39,26 @@
 }
 
 .recImage{
-  height: 250px;
+  height: 220px;
 }
 
 .info{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   padding-top: 20px;
 }
 
+.info h3{
+  font-size: 40px;
+}
+
+
+.c-top{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 
 .tags{
@@ -52,6 +69,7 @@
   background-color: rgb(223, 221, 221);
   padding: 3px 6px;
   border-radius: 8px;
+  font-size: 14px;
 }
 
 .info h3{
@@ -63,9 +81,48 @@
 }
 
 
+.rating{
+  width: 17px;
+}
+
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 
+.rat{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.diff{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: rgb(226, 255, 226);
+  color: green;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.d{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.descr{
+  font-size: 13px;
+  
+}
 
 span{
   position: absolute;
@@ -77,4 +134,5 @@ span{
   background-color: rgb(241, 219, 219);
   border-radius: 8px;
   color: red;
+  font-weight: 400;
 }

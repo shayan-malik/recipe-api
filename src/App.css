@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  background-color: #ccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  padding: 20px;
+  width: 250px;
+  height: 450px;
+  background-color: white;
+  box-shadow: 7px 7px 5px gray;
+  border-radius: 20px;
+  position: relative;
+}
+
+.recImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.recImage{
+  height: 250px;
+}
+
+.info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.tags{
+  display: flex;
+  gap: 10px;
+}
+.tags p{
+  background-color: rgb(223, 221, 221);
+  padding: 3px 6px;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info h3{
+  font-size: 18px;
+}
+
+.btn button{
+  padding: 7px 15px;
+}
+
+
+
+
+
+
+span{
+  position: absolute;
+  font-weight: lighter;
+  top: 255px;
+  right: 10px;
+  font-size: 16px;
+  padding: 2px 8px;
+  background-color: rgb(241, 219, 219);
+  border-radius: 8px;
+  color: red;
 }
